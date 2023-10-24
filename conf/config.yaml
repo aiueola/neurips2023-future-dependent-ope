@@ -1,0 +1,11 @@
+defaults:
+  - setting: taxi_tabular
+  - ope_config: default
+  - online_learning: default
+
+hydra:
+  run:
+    dir: ./
+  sweep:
+    dir: ./
+    subdir: ./

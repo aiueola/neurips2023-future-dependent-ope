@@ -1,0 +1,25 @@
+# @package _group_
+experiment: cartpole_neural
+env: cartpole
+model: neural
+compared_estimators: 
+ - future_dependent
+ - value_based
+ - sis
+n_trajectories: 1000
+noise_param: 0.3
+history_length: 3
+memory_length: 0
+future_length: 0
+behavior_epsilon: 0.3
+evaluation_epsilon: 
+  - 0.1
+  - 0.3
+  - 0.5
+  - 0.7
+behavior_guide_policy_type: expert
+evaluation_guide_policy_type: expert
+gamma: 0.95
+start_random_state: 0
+n_random_state: 20
+base_random_state: 12345

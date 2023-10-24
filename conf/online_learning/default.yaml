@@ -1,0 +1,7 @@
+# @package _group_
+env: cartpole
+memory_length: 0
+noise_param: 0.0
+gamma: 0.95
+is_linear: False
+base_random_state: 12345
